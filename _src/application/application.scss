@@ -51,7 +51,7 @@ body {
   &:before {
     content: attr(data-title);
     position: absolute;
-    background-color: $brand-three;
+    background-color: $brand-two;
     left: 0;
     right: 0;
     padding: 0.5em 1rem;

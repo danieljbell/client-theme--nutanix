@@ -54,7 +54,8 @@
   margin: $heading-six-margin;
 }
 
-#content_editor p {
+#content_editor p,
+#content_editor li {
   color: $paragraph-text-color;
   font-family: $paragraph-font-family;
   font-size: $paragraph-font-size;
