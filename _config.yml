@@ -1,0 +1,15 @@
+title: Client Name
+
+exclude: 
+  - source-file.pdf
+  - node_modules
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - npm-debug.log
+
+collections:
+  pages:
+    output: true
