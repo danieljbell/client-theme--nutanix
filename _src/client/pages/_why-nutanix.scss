@@ -1,0 +1,56 @@
+.nutanix-page--why-nutanix {
+
+  .nutanix-icon-item {
+    @include mobile {
+      float: none;
+    }
+    
+    #content_editor &,
+    .pdf-page-content & {
+      margin-bottom: 2em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+  .nutanix-icon-item--icon {
+    width: 150px;
+    text-align: center;
+    @include mobile {
+      width: auto;
+    }
+    
+    img {
+      max-width: 150px !important;
+      max-height: 75px;
+    }
+
+  }
+
+  .nutanix-icon-item,
+  .nutanix-icon-item--icon,
+  .nutanix-icon-item--content {
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .nutanix-icon-item,
+  .nutanix-icon-item--content {
+    width: auto;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .nutanix-icon-item--content {
+    @include mobile {
+      padding-top: 0.5em;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}

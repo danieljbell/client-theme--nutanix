@@ -1,0 +1,38 @@
+.nutanix-icon-list {
+  list-style-type: none;
+  
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+}
+
+.nutanix-icon-item {
+  display: table;
+  width: calc(50% - 2rem);
+  float: left;
+  @include mobile {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+.nutanix-icon-item--icon,
+.nutanix-icon-item--content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25%;
+}
+
+.nutanix-icon-item--content {
+  width: 75%;
+  padding: 0 1rem;
+}

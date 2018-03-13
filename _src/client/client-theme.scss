@@ -7,7 +7,12 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 =================================================================
 */
 
+@import 'modules/icon-list';
+
 @import 'pages/cover-page';
+@import 'pages/enterprise-cloud-infrastructure';
+@import 'pages/enterprise-cloud';
+@import 'pages/why-nutanix';
 
 
 @import './_overrides';
