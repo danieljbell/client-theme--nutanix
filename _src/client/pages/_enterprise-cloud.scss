@@ -1,5 +1,21 @@
 .nutanix-page--enterprise-cloud {
 
+  h1 {
+    
+    #content_editor &,
+    .pdf-page-content & {
+      text-align: center;
+      margin: 0.5em 0 1em;
+    }
+
+  }
+
+  .nutanix-icon-list {
+    background-image: linear-gradient(to right, rgba(white, 0.25), rgba(white, 0) 75%);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
   .nutanix-icon-item {
     @include mobile {
       float: none;
