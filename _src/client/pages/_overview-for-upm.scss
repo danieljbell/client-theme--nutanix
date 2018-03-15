@@ -1,0 +1,39 @@
+.nutanix-page--overview-for-upm {
+
+  h1 {
+     
+    #content_editor &,
+    .pdf-page-content & {
+      text-align: center;
+      margin: 0.5em 0 1em;
+    }
+
+  }
+
+}
+
+
+.nutanix-page--overview-for-upm .nutanix-shadowbox > div:first-child {
+  padding-top: 25px;
+  @include mobile {
+    padding-top: 0;
+  }
+}
+
+.nutanix-page--overview-for-upm .nutanix-shadowbox > div:last-child {
+  @include mobile {
+    padding-top: 25px;
+  }
+}
+
+.nutanix-page--overview-for-upm .nutanix-icon-item--icon {
+  text-align: center;
+}
+
+.nutanix-page--overview-for-upm .nutanix-green-box .nutanix-icon-item--icon p,
+.nutanix-page--overview-for-upm .nutanix-orange-box .nutanix-icon-item--icon p {
+  #content_editor &,
+  .pdf-page-content & {
+    color: $base-text-color;
+  }
+}

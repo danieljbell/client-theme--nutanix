@@ -1,0 +1,51 @@
+.nutanix-shadowbox {
+  display: table;
+  width: 100%;
+  @include mobile {
+    display: block;
+  }
+  
+  > * {
+    display: table-cell;
+    vertical-align: top;
+    @include mobile {
+      display: block;
+    }
+  }
+
+}
+
+.nutanix-shadowbox h2 {
+  #content_editor &,
+  .pdf-page-content & {
+    text-align: center;
+  }
+}
+
+.nutanix-shadowbox .nutanix-shadowbox--shadowed {
+  width: 60px;
+  position: relative;
+  background-image: linear-gradient(to right, rgba(#76787A,0), rgba(#76787A,0.5));
+  @include mobile {
+    display: none;
+  }
+  
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 120px;
+  }
+  
+  &:before {
+    background-image: linear-gradient(135deg, #fff, rgba(#fff,0));
+  }
+  
+  &:after {
+    bottom: 0;
+    background-image: linear-gradient(45deg, #fff, rgba(#fff,0));
+  }
+
+
+}

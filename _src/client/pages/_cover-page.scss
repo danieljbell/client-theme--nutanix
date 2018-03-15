@@ -1,11 +1,17 @@
 .nutanix-page--cover {
-  padding: 3em 1em 0;
+  position: relative;
+  left: -30px;
+  top: -20px;
+  width: calc(100% + 60px);
+  margin-bottom: -40px;
+  background-color: $brand;
+  padding: 5em 40px 1rem;
   background-image: url(../img/nutanix-logo-pattern.png);
   background-size: 600px;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 150px center;
   @include mobile {
-    padding: 2em 0 1em;
+    padding: 2em 20px 1em;
     background-image: unset;
   }
   
@@ -24,6 +30,7 @@
     margin-bottom: 3em;
 
     p {
+      color: #fff !important;
       font-size: 1.1em !important;
       &:first-child {
         margin-bottom: 0 !important;
@@ -38,6 +45,7 @@
   }
 
   .nutanix-page--cover--people-item {
+    color: #fff !important;
     font-size: 0.85em !important;
     &:last-child {
       margin-bottom: 0 !important;
@@ -48,6 +56,7 @@
     
     #content_editor &,
     .pdf-page-content & {
+      color: #fff !important;
       text-align: right;
       margin-top: 6em;
       @include mobile {

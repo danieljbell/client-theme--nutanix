@@ -1,0 +1,37 @@
+@mixin box($color) {
+  background-color: $color;
+  padding: 0.25em 1em;
+  // padding: 1em;
+
+
+  #content_editor &,
+  .pdf-page-content &,
+  #content_editor & *,
+  .pdf-page-content & * {
+    color: #fff;
+  }
+
+  #content_editor & p:last-child,
+  .pdf-page-content & p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.nutanix-blue-box {
+  @include box($brand);
+}
+
+.nutanix-green-box {
+  @include box($brand-two);
+}
+
+.nutanix-orange-box {
+  @include box($brand-four);
+}
+
+// .nutanix-blue-box,
+// .nutanix-green-box,
+// .nutanix-orange-box {
+
+// }

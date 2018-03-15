@@ -16,7 +16,7 @@
 
 .nutanix-icon-item {
   display: table;
-  width: calc(50% - 2rem);
+  // width: calc(50% - 2rem);
   float: left;
   @include mobile {
     display: block;
@@ -35,4 +35,12 @@
 .nutanix-icon-item--content {
   width: 75%;
   padding: 0 1rem;
+  
+  p:last-child {
+    #content_editor &,
+    .pdf-page-content & {
+      margin-bottom: 0;
+    }
+  }
+
 }
