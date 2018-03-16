@@ -1,4 +1,4 @@
-@mixin box($color) {
+@mixin box($color, $text-color: #fff) {
   background-color: $color;
   padding: 0.25em 1em;
   // padding: 1em;
@@ -8,7 +8,7 @@
   .pdf-page-content &,
   #content_editor & *,
   .pdf-page-content & * {
-    color: #fff;
+    color: $text-color;
   }
 
   #content_editor & p:last-child,
@@ -30,8 +30,10 @@
   @include box($brand-four);
 }
 
-// .nutanix-blue-box,
-// .nutanix-green-box,
-// .nutanix-orange-box {
+.nutanix-white-box {
+  @include box(#fff, $base-text-color);
+}
 
-// }
+.nutanix-gray-box {
+  @include box(#76787A);
+}

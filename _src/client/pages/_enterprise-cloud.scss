@@ -26,6 +26,9 @@
     background-image: linear-gradient(to right, rgba(white, 0.25), rgba(white, 0) 75%);
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    @include mobile {
+      background-image: unset;
+    }
   }
 
   .nutanix-icon-item {
@@ -35,7 +38,7 @@
     
     #content_editor &,
     .pdf-page-content & {
-      margin-bottom: 2em;
+      margin-bottom: 3em;
       &:last-child {
         margin-bottom: 0;
       }
@@ -46,13 +49,33 @@
   .nutanix-icon-item--icon {
     width: 150px;
     text-align: center;
+    position: relative;
     @include mobile {
       width: auto;
+    }
+
+    &:after {
+      @include mobile {
+        content: '';
+        position: absolute;
+        top: calc(50% - 5px);
+        width: 150px;
+        height: 110px;
+        left: 50%;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        filter: blur(20px);
+        border-radius: 50%;
+        opacity: 0.4;
+      }
     }
     
     img {
       max-width: 150px !important;
       max-height: 75px;
+      position: relative;
+      z-index: 1;
     }
 
   }
