@@ -1,0 +1,33 @@
+.nutanix-page--prism-overview {
+  position: relative;
+  left: -30px;
+  top: -20px;
+  width: calc(100% + 60px);
+  margin-bottom: -40px;
+  background-color: $brand;
+  padding: 1em 40px 3.5em;
+  background-image: url(../img/nutanix-logo.png);
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) calc(100% - 1em);
+}
+
+.nutanix-page--prism-overview h1 {
+  #content_editor &,
+  .pdf-page-content & {
+    color: #fff;
+    text-align: center;
+    margin: 0.5em 0 1em;
+  }
+}
+
+.nutanix-page--prism-overview .nutanix-product-overview-graphic--icon h2 {
+  left: 45px;
+    @include mobile {
+      left: auto;
+    }
+}
+
+.nutanix-page--prism-overview .nutanix-blue-box {
+  background-color: darken($brand, 10%);
+}

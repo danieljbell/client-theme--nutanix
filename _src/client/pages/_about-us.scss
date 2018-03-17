@@ -10,42 +10,41 @@
   background-size: 175px, 125px;
   background-repeat: no-repeat;
   background-position: bottom left, calc(100% - 1em) calc(100% - 1em);
+}
 
-  h1 {
-    
-    #content_editor &,
-    .pdf-page-content & {
-      color: #fff;
-      text-align: center;
-      margin: 0.5em 0 1em;
-    }
-
+.nutanix-page--about-us h1 {
+  #content_editor &,
+  .pdf-page-content & {
+    color: #fff;
+    text-align: center;
+    margin: 0.5em 0 1em;
   }
+}
 
-  p {
-
-    #content_editor &,
-    .pdf-page-content & {
-      color: #fff;
-    }
-
+.nutanix-page--about-us p {
+  #content_editor &,
+  .pdf-page-content & {
+    color: #fff;
   }
+}
 
-  .nutanix-icon-list {
-    display: table;
+.nutanix-page--about-us .nutanix-icon-list {
+  display: table;
+  width: 100%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile {
+    display: block;
+    max-width: unset;
+  }
+}
+
+.nutanix-page--about-us  .nutanix-icon-item {
+  display: table-cell;
+  width: 50%;
+  @include mobile {
+    display: block;
     width: 100%;
-    @include mobile {
-      display: block;
-    }
   }
-
-  .nutanix-icon-item {
-    display: table-cell;
-    width: 50%;
-    @include mobile {
-      display: block;
-      width: 100%;
-    }
-  }
-
 }

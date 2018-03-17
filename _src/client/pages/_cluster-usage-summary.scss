@@ -1,0 +1,104 @@
+.nutanix-page--cluster-usage-summary {
+  position: relative;
+  left: -30px;
+  top: -20px;
+  width: calc(100% + 60px);
+  margin-bottom: -40px;
+  padding: 1em 40px 3.5em;
+  background-image: url(../img/nutanix-logo--full-color.png);
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) calc(100% - 1em);
+}
+
+.nutanix-page--cluster-usage-summary h1 {
+  #content_editor &,
+  .pdf-page-content & {
+    text-align: center;
+    margin: 0.5em 0 1em;
+  }
+}
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic {
+  position: relative;
+}
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend {
+  position: absolute;
+  list-style-type: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mobile {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: unset;
+    text-align: center;
+  }
+
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0;
+  }
+
+}
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li {
+  display: block;
+  text-align: center;
+  @include mobile {
+    display: inline-block;
+  }
+  
+  #content_editor &,
+  .pdf-page-content & {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  &:first-child {
+    background-color: $brand;
+  }
+
+  &:last-child {
+    background-color: $brand-two;
+  }
+
+}
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts {
+  list-style-type: none;
+
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0;
+  }
+
+}
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts li {
+  display: inline-block;
+  width: calc(50% - 2px);
+  text-align: center;
+  
+  #content_editor &,
+  .pdf-page-content & {
+    margin-bottom: 0;
+  }
+
+
+}
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts img {
+  #content_editor &,
+  .pdf-page-content & {
+    max-width: 300px;
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}

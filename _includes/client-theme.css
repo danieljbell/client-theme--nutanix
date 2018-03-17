@@ -74,6 +74,58 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 
 .nutanix-shadowbox .nutanix-shadowbox--shadowed:after { bottom: 0; background-image: -webkit-linear-gradient(45deg, #fff, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(45deg, #fff, rgba(255, 255, 255, 0)); background-image: linear-gradient(45deg, #fff, rgba(255, 255, 255, 0)); }
 
+.nutanix-product-overview-graphic { display: table; width: 100%; }
+
+.nutanix-product-overview-graphic > * { display: table-cell; vertical-align: middle; }
+
+.nutanix-product-overview-graphic--icon { position: relative; padding-right: 30px; z-index: 2; }
+
+.nutanix-product-overview-graphic--icon h2 { position: absolute; left: 20px; }
+
+.nutanix-product-overview-graphic--icon img { border-radius: 50%; border: 5px solid #fff; margin-bottom: 0.5em; }
+
+#content_editor .nutanix-product-overview-graphic--icon img, .pdf-page-content .nutanix-product-overview-graphic--icon img { max-width: 150px; }
+
+.nutanix-product-overview-graphic--api { background-color: #76787A; padding: 0.25em 1em; position: relative; text-align: center; }
+
+#content_editor .nutanix-product-overview-graphic--api, .pdf-page-content .nutanix-product-overview-graphic--api, #content_editor .nutanix-product-overview-graphic--api *, .pdf-page-content .nutanix-product-overview-graphic--api * { color: #fff; }
+
+#content_editor .nutanix-product-overview-graphic--api p:last-child, .pdf-page-content .nutanix-product-overview-graphic--api p:last-child { margin-bottom: 0; }
+
+.nutanix-product-overview-graphic--api:before { content: ''; background-image: url(../img/white-triangle.png); background-position: center; background-size: cover; background-repeat: no-repeat; position: absolute; width: 60px; top: 0; bottom: 0; right: 100%; }
+
+.nutanix-product-overview-graphic--components { list-style-type: none; }
+
+#content_editor .nutanix-product-overview-graphic--components, .pdf-page-content .nutanix-product-overview-graphic--components { padding-left: 0; }
+
+.nutanix-product-overview-graphic--component-item { display: table; width: 100%; }
+
+#content_editor .nutanix-product-overview-graphic--component-item, .pdf-page-content .nutanix-product-overview-graphic--component-item { margin-bottom: 0.25em; }
+
+.nutanix-product-overview-graphic--component-item > * { display: table-cell; vertical-align: middle; }
+
+.nutanix-product-overview-graphic--component-item:first-child { padding-top: 20px; }
+
+#content_editor .nutanix-product-overview-graphic--component-item:last-child, .pdf-page-content .nutanix-product-overview-graphic--component-item:last-child { margin-bottom: 0; padding-bottom: 20px; }
+
+.nutanix-product-overview-graphic--component-item .nutanix-green-box, .nutanix-product-overview-graphic--component-item .nutanix-blue-box { text-align: center; border-right: 5px solid #024DA1; width: 125px; }
+
+#content_editor .nutanix-product-overview-graphic--component-item .nutanix-green-box, .pdf-page-content .nutanix-product-overview-graphic--component-item .nutanix-green-box, #content_editor .nutanix-product-overview-graphic--component-item .nutanix-blue-box, .pdf-page-content .nutanix-product-overview-graphic--component-item .nutanix-blue-box { font-size: 12px; line-height: 1.2; }
+
+.nutanix-product-overview-graphic--sub-components { background-color: #ccc; padding: 0.25em 1em; list-style-type: none; display: table; width: 100%; }
+
+#content_editor .nutanix-product-overview-graphic--sub-components, .pdf-page-content .nutanix-product-overview-graphic--sub-components, #content_editor .nutanix-product-overview-graphic--sub-components *, .pdf-page-content .nutanix-product-overview-graphic--sub-components * { color: #fff; }
+
+#content_editor .nutanix-product-overview-graphic--sub-components p:last-child, .pdf-page-content .nutanix-product-overview-graphic--sub-components p:last-child { margin-bottom: 0; }
+
+#content_editor .nutanix-product-overview-graphic--sub-components, .pdf-page-content .nutanix-product-overview-graphic--sub-components { padding-left: 0.25em; padding-right: 0.25em; }
+
+.nutanix-product-overview-graphic--sub-component-item { display: table-cell; text-align: center; vertical-align: middle; }
+
+#content_editor .nutanix-product-overview-graphic--sub-component-item, .pdf-page-content .nutanix-product-overview-graphic--sub-component-item { font-size: 10px; line-height: 1.2; padding: 0.25em; }
+
+.nutanix-product-overview-graphic--sub-component-item .nutanix-gray-box { padding: 2em 0.5em; }
+
 .nutanix-page--cover { position: relative; left: -30px; top: -20px; width: calc(100% + 60px); margin-bottom: -40px; background-color: #024DA1; padding: 5em 40px 1rem; background-image: url(../img/nutanix-logo-pattern.png); background-size: 600px; background-repeat: no-repeat; background-position: 150px center; }
 
 .nutanix-page--cover .nutanix-page--cover--logo { width: 100%; max-width: 300px !important; margin-bottom: 3em; }
@@ -100,7 +152,7 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 
 #content_editor .nutanix-page--about-us p, .pdf-page-content .nutanix-page--about-us p { color: #fff; }
 
-.nutanix-page--about-us .nutanix-icon-list { display: table; width: 100%; }
+.nutanix-page--about-us .nutanix-icon-list { display: table; width: 100%; max-width: 80%; margin-left: auto; margin-right: auto; }
 
 .nutanix-page--about-us .nutanix-icon-item { display: table-cell; width: 50%; }
 
@@ -216,6 +268,46 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 
 #content_editor .nutanix-page--overview-for-upm .nutanix-green-box .nutanix-icon-item--icon p, .pdf-page-content .nutanix-page--overview-for-upm .nutanix-green-box .nutanix-icon-item--icon p, #content_editor .nutanix-page--overview-for-upm .nutanix-orange-box .nutanix-icon-item--icon p, .pdf-page-content .nutanix-page--overview-for-upm .nutanix-orange-box .nutanix-icon-item--icon p { color: #4C4C4E; }
 
+.nutanix-page--cluster-usage-summary { position: relative; left: -30px; top: -20px; width: calc(100% + 60px); margin-bottom: -40px; padding: 1em 40px 3.5em; background-image: url(../img/nutanix-logo--full-color.png); background-size: 125px; background-repeat: no-repeat; background-position: calc(100% - 1em) calc(100% - 1em); }
+
+#content_editor .nutanix-page--cluster-usage-summary h1, .pdf-page-content .nutanix-page--cluster-usage-summary h1 { text-align: center; margin: 0.5em 0 1em; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic { position: relative; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend { position: absolute; list-style-type: none; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+#content_editor .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend, .pdf-page-content .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend { padding-left: 0; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li { display: block; text-align: center; }
+
+#content_editor .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li, .pdf-page-content .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li { color: #fff; font-size: 14px; line-height: 1; padding: 0.5em 1em; margin-bottom: 0.5em; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li:first-child { background-color: #024DA1; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li:last-child { background-color: #AFD135; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts { list-style-type: none; }
+
+#content_editor .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts, .pdf-page-content .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts { padding-left: 0; }
+
+.nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts li { display: inline-block; width: calc(50% - 2px); text-align: center; }
+
+#content_editor .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts li, .pdf-page-content .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts li { margin-bottom: 0; }
+
+#content_editor .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts img, .pdf-page-content .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts img { max-width: 300px; }
+
+.nutanix-page--acropolis-overview { position: relative; left: -30px; top: -20px; width: calc(100% + 60px); margin-bottom: -40px; background-color: #024DA1; padding: 1em 40px 3.5em; background-image: url(../img/nutanix-logo.png); background-size: 125px; background-repeat: no-repeat; background-position: calc(100% - 1em) calc(100% - 1em); }
+
+#content_editor .nutanix-page--acropolis-overview h1, .pdf-page-content .nutanix-page--acropolis-overview h1 { color: #fff; text-align: center; margin: 0.5em 0 1em; }
+
+.nutanix-page--prism-overview { position: relative; left: -30px; top: -20px; width: calc(100% + 60px); margin-bottom: -40px; background-color: #024DA1; padding: 1em 40px 3.5em; background-image: url(../img/nutanix-logo.png); background-size: 125px; background-repeat: no-repeat; background-position: calc(100% - 1em) calc(100% - 1em); }
+
+#content_editor .nutanix-page--prism-overview h1, .pdf-page-content .nutanix-page--prism-overview h1 { color: #fff; text-align: center; margin: 0.5em 0 1em; }
+
+.nutanix-page--prism-overview .nutanix-product-overview-graphic--icon h2 { left: 45px; }
+
+.nutanix-page--prism-overview .nutanix-blue-box { background-color: #01356f; }
+
 .nutanix-has-text-white { color: #fff !important; }
 
 .nutanix-has-text-brand-two { color: #AFD135 !important; }
@@ -278,7 +370,7 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 
 .nutanix-b-a { border: 1px solid #fff; }
 
-@media screen and (max-width: 735px) { .nutanix-icon-item { display: block; width: 100%; } .nutanix-shadowbox { display: block; } .nutanix-shadowbox > * { display: block; } .nutanix-shadowbox .nutanix-shadowbox--shadowed { display: none; } .nutanix-page--cover { padding: 2em 20px 1em; background-image: unset; } #content_editor .nutanix-page--cover .nutanix-page--cover--date, .pdf-page-content .nutanix-page--cover .nutanix-page--cover--date { margin-top: 3rem; } .nutanix-page--about-us .nutanix-icon-list { display: block; } .nutanix-page--about-us .nutanix-icon-item { display: block; width: 100%; } .nutanix-page--enterprise-cloud-infrastructure .one-third:first-child { margin-bottom: 1.5em; left: 0; padding-left: 0; padding-right: 0; } .nutanix-page--enterprise-cloud-infrastructure .one-third:first-child:after { width: auto; height: 1px; left: 0; right: 0; top: 100%; bottom: auto; } .nutanix-page--enterprise-cloud-infrastructure .one-third:nth-child(2) { padding-left: 0; padding-right: 0; } .nutanix-page--enterprise-cloud-infrastructure .one-third:last-child { padding-left: 0; padding-right: 0; right: 0; padding-top: 1.5em; } .nutanix-page--enterprise-cloud-infrastructure .one-third:last-child:before { width: auto; height: 1px; left: 0; right: 0; top: auto; bottom: 100%; } .nutanix-page--enterprise-cloud .nutanix-icon-list { background-image: unset; } .nutanix-page--enterprise-cloud .nutanix-icon-item { float: none; } .nutanix-page--enterprise-cloud .nutanix-icon-item--icon { width: auto; } .nutanix-page--enterprise-cloud .nutanix-icon-item--icon:after { content: ''; position: absolute; top: calc(50% - 5px); width: 150px; height: 110px; left: 50%; background-color: #fff; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 0; -webkit-filter: blur(20px); filter: blur(20px); border-radius: 50%; opacity: 0.4; } .nutanix-page--enterprise-cloud .nutanix-icon-item, .nutanix-page--enterprise-cloud .nutanix-icon-item--icon, .nutanix-page--enterprise-cloud .nutanix-icon-item--content { display: block; } .nutanix-page--enterprise-cloud .nutanix-icon-item, .nutanix-page--enterprise-cloud .nutanix-icon-item--content { text-align: center; } .nutanix-page--enterprise-cloud .nutanix-icon-item--content { padding-top: 0.5em; padding-left: 0; padding-right: 0; } .nutanix-page--value-proposition .two-fifths, .nutanix-page--value-proposition .three-fifths { display: block; width: 100%; } .nutanix-page--value-proposition .two-fifths .nutanix-white-box { margin-right: 0; margin-bottom: 0.5em; } .nutanix-page--value-proposition .three-fifths .nutanix-white-box { margin-left: 0; min-height: unset; } .nutanix-page--why-nutanix .nutanix-icon-item { float: none; } .nutanix-page--why-nutanix .nutanix-icon-item--icon { width: auto; } .nutanix-page--why-nutanix .nutanix-icon-item, .nutanix-page--why-nutanix .nutanix-icon-item--icon, .nutanix-page--why-nutanix .nutanix-icon-item--content { display: block; } .nutanix-page--why-nutanix .nutanix-icon-item, .nutanix-page--why-nutanix .nutanix-icon-item--content { text-align: center; } .nutanix-page--why-nutanix .nutanix-icon-item--content { padding-top: 0.5em; padding-left: 0; padding-right: 0; } .nutanix-page--overview-for-upm .nutanix-shadowbox > div:first-child { padding-top: 0; } .nutanix-page--overview-for-upm .nutanix-shadowbox > div:last-child { padding-top: 25px; } #content_editor .grid .one-third, .pdf-page-content .grid .one-third { width: 100%; display: block; } }
+@media screen and (max-width: 735px) { .nutanix-icon-item { display: block; width: 100%; } .nutanix-shadowbox { display: block; } .nutanix-shadowbox > * { display: block; } .nutanix-shadowbox .nutanix-shadowbox--shadowed { display: none; } .nutanix-product-overview-graphic { display: block; } .nutanix-product-overview-graphic > * { display: block; } .nutanix-product-overview-graphic--icon { padding-right: 0; text-align: center; padding-bottom: 15px; } .nutanix-product-overview-graphic--icon h2 { position: static; left: auto; } .nutanix-product-overview-graphic--api:before { display: none; } .nutanix-product-overview-graphic--component-item { display: block; } #content_editor .nutanix-product-overview-graphic--component-item, .pdf-page-content .nutanix-product-overview-graphic--component-item { margin-bottom: 1em; } .nutanix-product-overview-graphic--component-item > * { display: block; } .nutanix-product-overview-graphic--component-item .nutanix-green-box, .nutanix-product-overview-graphic--component-item .nutanix-blue-box { width: 100%; border-right: 0; padding: 0.5em; } .nutanix-product-overview-graphic--sub-components-wrapper { overflow: scroll; } .nutanix-page--cover { padding: 2em 20px 1em; background-image: unset; } #content_editor .nutanix-page--cover .nutanix-page--cover--date, .pdf-page-content .nutanix-page--cover .nutanix-page--cover--date { margin-top: 3rem; } .nutanix-page--about-us .nutanix-icon-list { display: block; max-width: unset; } .nutanix-page--about-us .nutanix-icon-item { display: block; width: 100%; } .nutanix-page--enterprise-cloud-infrastructure .one-third:first-child { margin-bottom: 1.5em; left: 0; padding-left: 0; padding-right: 0; } .nutanix-page--enterprise-cloud-infrastructure .one-third:first-child:after { width: auto; height: 1px; left: 0; right: 0; top: 100%; bottom: auto; } .nutanix-page--enterprise-cloud-infrastructure .one-third:nth-child(2) { padding-left: 0; padding-right: 0; } .nutanix-page--enterprise-cloud-infrastructure .one-third:last-child { padding-left: 0; padding-right: 0; right: 0; padding-top: 1.5em; } .nutanix-page--enterprise-cloud-infrastructure .one-third:last-child:before { width: auto; height: 1px; left: 0; right: 0; top: auto; bottom: 100%; } .nutanix-page--enterprise-cloud .nutanix-icon-list { background-image: unset; } .nutanix-page--enterprise-cloud .nutanix-icon-item { float: none; } .nutanix-page--enterprise-cloud .nutanix-icon-item--icon { width: auto; } .nutanix-page--enterprise-cloud .nutanix-icon-item--icon:after { content: ''; position: absolute; top: calc(50% - 5px); width: 150px; height: 110px; left: 50%; background-color: #fff; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 0; -webkit-filter: blur(20px); filter: blur(20px); border-radius: 50%; opacity: 0.4; } .nutanix-page--enterprise-cloud .nutanix-icon-item, .nutanix-page--enterprise-cloud .nutanix-icon-item--icon, .nutanix-page--enterprise-cloud .nutanix-icon-item--content { display: block; } .nutanix-page--enterprise-cloud .nutanix-icon-item, .nutanix-page--enterprise-cloud .nutanix-icon-item--content { text-align: center; } .nutanix-page--enterprise-cloud .nutanix-icon-item--content { padding-top: 0.5em; padding-left: 0; padding-right: 0; } .nutanix-page--value-proposition .two-fifths, .nutanix-page--value-proposition .three-fifths { display: block; width: 100%; } .nutanix-page--value-proposition .two-fifths .nutanix-white-box { margin-right: 0; margin-bottom: 0.5em; } .nutanix-page--value-proposition .three-fifths .nutanix-white-box { margin-left: 0; min-height: unset; } .nutanix-page--why-nutanix .nutanix-icon-item { float: none; } .nutanix-page--why-nutanix .nutanix-icon-item--icon { width: auto; } .nutanix-page--why-nutanix .nutanix-icon-item, .nutanix-page--why-nutanix .nutanix-icon-item--icon, .nutanix-page--why-nutanix .nutanix-icon-item--content { display: block; } .nutanix-page--why-nutanix .nutanix-icon-item, .nutanix-page--why-nutanix .nutanix-icon-item--content { text-align: center; } .nutanix-page--why-nutanix .nutanix-icon-item--content { padding-top: 0.5em; padding-left: 0; padding-right: 0; } .nutanix-page--overview-for-upm .nutanix-shadowbox > div:first-child { padding-top: 0; } .nutanix-page--overview-for-upm .nutanix-shadowbox > div:last-child { padding-top: 25px; } .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend { position: static; top: auto; left: auto; -webkit-transform: unset; -ms-transform: unset; transform: unset; text-align: center; } .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--legend li { display: inline-block; } #content_editor .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts img, .pdf-page-content .nutanix-page--cluster-usage-summary .nutanix-cluster-graphic--charts img { max-width: 100%; } .nutanix-page--prism-overview .nutanix-product-overview-graphic--icon h2 { left: auto; } #content_editor .grid .one-third, .pdf-page-content .grid .one-third { width: 100%; display: block; } }
 
 @media screen and (max-width: 568px) { .nutanix-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
 

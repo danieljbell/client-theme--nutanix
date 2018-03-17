@@ -1,0 +1,192 @@
+.nutanix-product-overview-graphic {
+  display: table;
+  width: 100%;
+  @include mobile {
+    display: block;
+  }
+  
+  > * {
+    display: table-cell;
+    vertical-align: middle;
+    @include mobile {
+      display: block;
+    }
+  }
+
+}
+
+.nutanix-product-overview-graphic--icon {
+  position: relative;
+  padding-right: 30px;
+  z-index: 2;
+  @include mobile {
+    padding-right: 0;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  
+  h2 {
+    position: absolute;
+    left: 20px;
+    @include mobile {
+      position: static;
+      left: auto;
+    }
+  }
+
+}
+
+.nutanix-product-overview-graphic--icon img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 0.5em;
+  
+  #content_editor &,
+  .pdf-page-content & {
+    max-width: 150px;
+  }
+
+}
+
+.nutanix-product-overview-graphic--api {
+  @include box(#76787A);
+  position: relative;
+  text-align: center;
+  
+  &:before {
+    content: '';
+    background-image: url(../img/white-triangle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    @include mobile {
+      display: none;
+    }
+  }
+
+}
+
+.nutanix-product-overview-graphic--components {
+  list-style-type: none;
+
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0;
+  }
+
+}
+
+.nutanix-product-overview-graphic--component-item {
+  display: table;
+  width: 100%;
+  @include mobile {
+    display: block;
+  }
+
+  #content_editor &,
+  .pdf-page-content & {
+    margin-bottom: 0.25em;
+    @include mobile {
+      margin-bottom: 1em;
+    }
+  }
+  
+  > * {
+    display: table-cell;
+    vertical-align: middle;
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &:first-child {
+    padding-top: 20px;
+  }
+
+  &:last-child {
+    #content_editor &,
+    .pdf-page-content & {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+    }
+  }
+
+}
+
+.nutanix-product-overview-graphic--component-item .nutanix-green-box,
+.nutanix-product-overview-graphic--component-item .nutanix-blue-box {
+  text-align: center;
+  border-right: 5px solid $brand;
+  width: 125px;
+  @include mobile {
+    width: 100%;
+    border-right: 0;
+    padding: 0.5em;
+  }
+
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+}
+
+.nutanix-product-overview-graphic--sub-components-wrapper {
+  @include mobile {
+    overflow: scroll;
+  }
+}
+
+.nutanix-product-overview-graphic--sub-components {
+  @include box(#ccc);
+  list-style-type: none;
+  display: table;
+  width: 100%;
+
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+  }
+
+}
+
+.nutanix-product-overview-graphic--sub-component-item {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 0.25em;
+  }
+
+  .nutanix-gray-box {
+    padding: 2em 0.5em;
+  }
+
+}
+
+// .nutanix-product-overview-graphic--component-item:first-child .nutanix-product-overview-graphic--sub-component-item {
+//   width: 25%;
+// }
+
+// .nutanix-product-overview-graphic--component-item:nth-child(2) .nutanix-product-overview-graphic--sub-component-item {
+//   width: 33%;
+// }
+
+// .nutanix-product-overview-graphic--component-item:last-child .nutanix-product-overview-graphic--sub-component-item {
+//   width: 33%;
+//   span {
+//     display: inline-block;
+//     min-height: 5em;
+//   }
+// }

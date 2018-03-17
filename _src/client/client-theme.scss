@@ -11,6 +11,7 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 @import 'modules/chapter-pages';
 @import 'modules/box';
 @import 'modules/shadowbox';
+@import 'modules/product-overview-graphic';
 
 @import 'pages/cover-page';
 @import 'pages/about-us';
@@ -20,6 +21,9 @@ GITHUB REPO: https://github.com/danieljbell/client-theme--nutanix
 @import 'pages/why-nutanix';
 @import 'pages/requirements';
 @import 'pages/overview-for-upm';
+@import 'pages/cluster-usage-summary';
+@import 'pages/acropolis-overview';
+@import 'pages/prism-overview';
 
 
 @import './_overrides';
