@@ -27,6 +27,13 @@
   text-align: center !important;
 }
 
+.nutanix-font-shrink {
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.9em !important;
+  }
+}
+
 
 // ========
 // SPACING

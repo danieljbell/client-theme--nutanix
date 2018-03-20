@@ -1,0 +1,114 @@
+.nutanix-page--cluster-overview {
+  position: relative;
+  left: -30px;
+  top: -20px;
+  width: calc(100% + 60px);
+  margin-bottom: -40px;
+  padding: 1em 40px 3.5em;
+  background-image: url(../img/nutanix-logo--full-color.png);
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) calc(100% - 1em);  
+}
+
+.nutanix-page--cluster-overview h1 {
+  #content_editor &,
+  .pdf-page-content & {
+    text-align: center;
+    margin: 0.5em 0 1em;
+  }
+}
+
+.nutanix-page--cluster-overview h2 {
+  #content_editor &,
+  .pdf-page-content & {
+    text-align: center;
+  }
+}
+
+.nutanix-page--cluster-overview .grid > .unit.half {
+  @include mobile {
+    width: 100%;
+    display: block;
+  }
+}
+
+.nutanix-page--cluster-overview .grid > .unit:first-child {
+  position: relative;
+  z-index: 2;
+  padding-right: 2em;
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../img/dark-triangle.png);
+    background-repeat: no-repeat;
+    background-size: 125px;
+    left: 85%;
+    z-index: -1;
+    @include mobile {
+      display: none;
+    }
+  }
+
+}
+
+.nutanix-page--cluster-overview .grid > .unit:last-child {
+  position: relative;
+  z-index: 2;
+  padding-left: 2em;
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.nutanix-page--DELL-XC430-4 .grid > .unit:first-child h2,
+.nutanix-page--DELL-XC630-10 .grid > .unit:first-child h2,
+.nutanix-page--DELL-XC730xd-12 .grid > .unit:first-child h2,
+.nutanix-page--DELL-XC730xd-24 .grid > .unit:first-child h2,
+.nutanix-page--DELL-XC6320-6 .grid > .unit:first-child h2 {
+  #content_editor &,
+  .pdf-page-content & {
+    margin-top: 2em;
+  }
+  &:first-child {
+    #content_editor &,
+    .pdf-page-content & {
+      @include mobile {
+        margin-top: 0em;
+      }
+    } 
+  }
+}
+
+.nutanix-page--DELL-XC430-4 .grid > .unit:first-child img,
+.nutanix-page--DELL-XC630-10 .grid > .unit:first-child img,
+.nutanix-page--DELL-XC730xd-12 .grid > .unit:first-child img,
+.nutanix-page--DELL-XC730xd-24 .grid > .unit:first-child img,
+.nutanix-page--DELL-XC6320-6 .grid > .unit:first-child img {
+  #content_editor &,
+  .pdf-page-content & {
+    margin-bottom: 3em;
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nutanix-page--DELL-XC430-4 .grid > .unit:last-child img,
+.nutanix-page--DELL-XC630-10 .grid > .unit:last-child img,
+.nutanix-page--DELL-XC730xd-12 .grid > .unit:last-child img,
+.nutanix-page--DELL-XC730xd-24 .grid > .unit:last-child img,
+.nutanix-page--DELL-XC6320-6 .grid > .unit:last-child img {
+  @include mobile {
+    margin-top: 2em;
+  }
+}

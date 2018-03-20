@@ -1,0 +1,59 @@
+.nutanix-page--support-tiers {
+  position: relative;
+  left: -30px;
+  top: -20px;
+  width: calc(100% + 60px);
+  margin-bottom: -40px;
+  background-color: $brand;
+  padding: 1em 40px 3.5em;
+  background-image: url(../img/nutanix-logo.png);
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) calc(100% - 1em);
+}
+
+.nutanix-page--support-tiers h1 {
+  #content_editor &,
+  .pdf-page-content & {
+    color: #fff;
+    text-align: center;
+    margin: 0.5em 0 1em;
+  }
+}
+
+.nutanix-page--support-tiers table th {
+  border-top: 3px solid #fff;
+  
+  &:first-child {
+    border-left: 3px solid #fff;
+  }
+
+  &:last-child {
+    border-right: 3px solid #fff;
+  }
+
+}
+
+.nutanix-page--support-tiers table td {
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid lighten($base-text-color, 60%);
+
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 16px;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+  
+  &:first-child {
+    text-align: left;
+    border-right: 1px solid lighten($base-text-color, 60%);
+  }
+
+  &:last-child {
+    border-left: 1px solid lighten($base-text-color, 60%);
+  }
+
+}
