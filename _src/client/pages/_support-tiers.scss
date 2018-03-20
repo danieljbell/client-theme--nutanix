@@ -6,7 +6,7 @@
   margin-bottom: -40px;
   background-color: $brand;
   padding: 1em 40px 3.5em;
-  background-image: url(../img/nutanix-logo.png);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/613001_original.png?1521516414);
   background-size: 125px;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) calc(100% - 1em);
@@ -15,9 +15,9 @@
 .nutanix-page--support-tiers h1 {
   #content_editor &,
   .pdf-page-content & {
-    color: #fff;
+    color: #fff !important;
     text-align: center;
-    margin: 0.5em 0 1em;
+    margin: 0.5em 0 1em !important;
   }
 }
 
@@ -36,7 +36,7 @@
 
 .nutanix-page--support-tiers table td {
   text-align: center;
-  background-color: #fff;
+  background-color: #fff !important;
   border-bottom: 1px solid lighten($base-text-color, 60%);
 
   #content_editor &,

@@ -1,8 +1,15 @@
-.nutanix-page--overview-for-upm h1 {     
+.nutanix-page--overview-for-upm h1 {
   #content_editor &,
   .pdf-page-content & {
     text-align: center;
-    margin: 0.5em 0 1em;
+    margin: 0.5em 0 1em !important;
+  }
+}
+
+.nutanix-page--overview-for-upm h2 {
+  #content_editor &,
+  .pdf-page-content {
+    color: $brand-two !important; 
   }
 }
 

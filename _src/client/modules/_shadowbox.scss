@@ -4,15 +4,15 @@
   @include mobile {
     display: block;
   }
-  
-  > * {
-    display: table-cell;
-    vertical-align: top;
-    @include mobile {
-      display: block;
-    }
-  }
 
+}
+
+.nutanix-shadowbox > * {
+  display: table-cell;
+  vertical-align: top;
+  @include mobile {
+    display: block;
+  }
 }
 
 .nutanix-shadowbox h2 {

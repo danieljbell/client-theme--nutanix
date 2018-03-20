@@ -29,7 +29,7 @@ gulp.task('css', function () {
     .pipe(browserSync.stream());
   gulp.src(['_src/client/_client_variables.scss', '_src/client/client-theme.scss'])
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./_includes'))

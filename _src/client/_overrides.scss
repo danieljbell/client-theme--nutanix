@@ -2,9 +2,10 @@
 // TYPOGRAPHY
 // ===================
 
-// #content_editor .page {
-  
-// }
+#content_editor *,
+.pdf-page-content * {
+  font-family: 'Gotham Rounded Book', Helvetica, Arial, sans-serif !important;
+}
 
 // #content_editor h1,
 // .pdf-page-content h1 {

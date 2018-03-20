@@ -6,18 +6,29 @@
   margin-bottom: -40px;
   background-color: $brand;
   padding: 1em 20px 3.5em;
-  background-image: url(../img/bg-arrow.png), url(../img/nutanix-logo.png);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/612961_original.png?1521516401), url(https://mytinder.s3.amazonaws.com/assets/medias/613001_original.png?1521516414);
   background-size: 175px, 125px;
   background-repeat: no-repeat;
   background-position: bottom left, calc(100% - 1em) calc(100% - 1em);
+  @include print {
+    left: -0.5in;
+    top: -0.5in;
+    width: 8.5in;
+    margin-bottom: -1in;
+    padding-top: 1.5in;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    min-height: 11in;
+    background-position: bottom left, 10in 7.5in;
+  }
 }
 
 .nutanix-page--about-us h1 {
   #content_editor &,
   .pdf-page-content & {
-    color: #fff;
+    color: #fff !important;
     text-align: center;
-    margin: 0.5em 0 1em;
+    margin: 0.5em 0 1em !important;
   }
 }
 
@@ -32,8 +43,8 @@
   display: table;
   width: 100%;
   max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   @include mobile {
     display: block;
     max-width: unset;

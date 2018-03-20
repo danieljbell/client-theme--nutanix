@@ -6,13 +6,23 @@
   margin-bottom: -40px;
   background-color: $brand;
   padding: 5em 40px 1rem;
-  background-image: url(../img/nutanix-logo-pattern.png);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/613000_original.png?1521516414);
   background-size: 600px;
   background-repeat: no-repeat;
   background-position: 150px center;
   @include mobile {
     padding: 2em 20px 1em;
     background-image: unset;
+  }
+  @include print {
+    left: -0.5in;
+    top: -0.5in;
+    width: 8.5in;
+    margin-bottom: -1in;
+    padding-top: 1.5in;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    min-height: 11in;
   }
   
   .nutanix-page--cover--logo {
@@ -42,6 +52,9 @@
   .nutanix-page--cover--people-list {
     list-style-type: none;
     padding-left: 0 !important;
+    @include print {
+      padding-top: 3.25in;
+    }
   }
 
   .nutanix-page--cover--people-item {
@@ -61,6 +74,9 @@
       margin-top: 6em;
       @include mobile {
         margin-top: 3rem;
+      }
+      @include print {
+        margin-top: 1in;
       }
     }
 

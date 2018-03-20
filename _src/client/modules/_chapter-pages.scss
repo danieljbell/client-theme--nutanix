@@ -5,10 +5,20 @@
   width: calc(100% + 60px);
   margin-bottom: -40px;
   padding: 11em 40px 11em 370px;
-  background-image: url(../img/nutanix-large-arrow.png), url(../img/abstract-bg.jpg);
+  background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/613002_original.png?1521516414), url(https://mytinder.s3.amazonaws.com/assets/medias/612965_original.jpg?1521516401);
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: -100px 0, center;
+  @include print {
+    left: -0.5in;
+    top: -0.5in;
+    width: 8.5in;
+    margin-bottom: -1in;
+    padding-top: 1.5in;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    min-height: 11in;
+  }
 }
 
 .nutanix-page--chapter-page h1 {
@@ -16,7 +26,7 @@
   .pdf-page-content & {
     font-size: 32px;
     text-align: center;
-    color: #fff;
-    margin-bottom: 0;
+    color: #fff !important;
+    margin-bottom: 0 !important;
   }
 }
