@@ -57,6 +57,7 @@
 .nutanix-product-overview-graphic--api {
   @include box(#76787A);
   position: relative;
+  z-index: 3;
   text-align: center;
   
   &:before {
@@ -72,6 +73,9 @@
     right: 100%;
     @include mobile {
       display: none;
+    }
+    @include print {
+      right: 110%;
     }
   }
 
@@ -154,6 +158,9 @@
   list-style-type: none;
   display: table;
   width: 100%;
+  @include print {
+    margin-bottom: 0 !important;
+  }
 
   #content_editor &,
   .pdf-page-content & {
@@ -167,6 +174,9 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  @include print {
+    margin-bottom: 0 !important;
+  }
 
   #content_editor &,
   .pdf-page-content & {
@@ -177,6 +187,10 @@
 
   .nutanix-gray-box {
     padding: 2em 0.5em;
+    @include print {
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
   }
 
 }

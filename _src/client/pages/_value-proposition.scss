@@ -15,11 +15,12 @@
     top: -0.5in;
     width: 8.5in;
     margin-bottom: -1in;
-    padding-top: 1.5in;
+    padding-top: 1in;
     padding-left: 0.5in;
     padding-right: 0.5in;
     min-height: 11in;
-    background-position: 5in 5in;
+    background-position: 6.6in 10.5in;
+    background-size: 1.5in;
   }
   
   h1 {
@@ -128,17 +129,23 @@
   }
 
   .nutanix-page--value-proposition--chart-container {
-    display: table;
     display: flex;
     width: 100%;
+    @include print {
+      display: table;
+    }
+
     > * {
-      display: table-cell;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       width: 50%;
+      @include print {
+        display: table-cell;
+      }
     }
+
   }
 
   .nutanix-page--value-proposition--chart-element-traditional {
@@ -154,7 +161,7 @@
 
   .nutanix-page--value-proposition--chart-element-nutanix {
     background-color: $brand-two;
-    margin-top: calc(300px - 120px);
+    margin-top: 180px;
     height: 120px;
     position: relative;
 
@@ -164,6 +171,9 @@
       bottom: 105%;
       left: 0;
       right: 0;
+      @include print {
+        left: 0.1in;
+      }
     }
 
     img {

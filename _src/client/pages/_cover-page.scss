@@ -60,9 +60,19 @@
   .nutanix-page--cover--people-item {
     color: #fff !important;
     font-size: 0.85em !important;
+    
     &:last-child {
       margin-bottom: 0 !important;
     }
+    
+    a {
+      #content_editor &,
+      .pdf-page-content & {
+        color: #fff !important;
+        text-decoration: none;
+      }
+    }
+
   }
 
   .nutanix-page--cover--date {

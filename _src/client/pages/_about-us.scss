@@ -19,7 +19,9 @@
     padding-left: 0.5in;
     padding-right: 0.5in;
     min-height: 11in;
-    background-position: bottom left, 10in 7.5in;
+    background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/614152_original.png?1521683803);
+    background-position: bottom;
+    background-size: 100%;
   }
 }
 
@@ -49,6 +51,9 @@
     display: block;
     max-width: unset;
   }
+  @include print {
+    max-width: 100%;
+  }
 }
 
 .nutanix-page--about-us  .nutanix-icon-item {
@@ -57,5 +62,25 @@
   @include mobile {
     display: block;
     width: 100%;
+  }
+  @include print {
+    height: 1in;
+    vertical-align: middle;
+  }
+}
+
+.nutanix-page--about-us .nutanix-icon-item--icon {
+  @include print {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+  }
+}
+
+.nutanix-page--about-us .nutanix-icon-item--content {
+  @include print {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
   }
 }

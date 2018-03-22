@@ -9,6 +9,18 @@
   background-size: 125px;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) calc(100% - 1em);
+  @include print {
+    left: -0.5in;
+    top: -0.5in;
+    width: 8.5in;
+    margin-bottom: -1in;
+    padding-top: 1in;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    min-height: 11in;
+    background-position: 6.6in 10.5in;
+    background-size: 1.5in;
+  }
 }
 
 .nutanix-page--cluster-usage-summary h1 {
@@ -35,6 +47,9 @@
     left: auto;
     transform: unset;
     text-align: center;
+  }
+  @include print {
+    left: 3.75in;
   }
 
   #content_editor &,
@@ -76,6 +91,9 @@
   #content_editor &,
   .pdf-page-content & {
     padding-left: 0;
+    @include print {
+      margin: 0 auto;
+    }
   }
 
 }
@@ -84,6 +102,9 @@
   display: inline-block;
   width: calc(50% - 3px);
   text-align: center;
+  @include print {
+    width: 49%;
+  }
   
   #content_editor &,
   .pdf-page-content & {
