@@ -18,6 +18,8 @@
     padding-left: 0.5in;
     padding-right: 0.5in;
     min-height: 11in;
+    background-position: center;
+    background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/614786_original.jpg?1521770935);
   }
 }
 
@@ -28,5 +30,11 @@
     text-align: center;
     color: #fff !important;
     margin-bottom: 0 !important;
+    @include print {
+      position: absolute;
+      left: 4in;
+      max-width: 4in;
+      top: 5in;
+    }
   }
 }

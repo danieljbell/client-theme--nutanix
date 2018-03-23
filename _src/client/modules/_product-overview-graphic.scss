@@ -18,11 +18,14 @@
 .nutanix-product-overview-graphic--icon {
   position: relative;
   padding-right: 30px;
-  z-index: 2;
+  z-index: 4;
   @include mobile {
     padding-right: 0;
     text-align: center;
     padding-bottom: 15px;
+  }
+  @include print {
+    z-index: unset;
   }
   
   h2 {
@@ -31,6 +34,9 @@
     @include mobile {
       position: static;
       left: auto;
+    }
+    @include print {
+      position: relative;
     }
   
     #content_editor &,
@@ -59,6 +65,9 @@
   position: relative;
   z-index: 3;
   text-align: center;
+  @include print {
+    z-index: unset;
+  }
   
   &:before {
     content: '';
@@ -75,7 +84,7 @@
       display: none;
     }
     @include print {
-      right: 110%;
+      display: none;
     }
   }
 

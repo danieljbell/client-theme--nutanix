@@ -3,12 +3,15 @@
   .pdf-page-content & {
     text-align: center;
     margin: 0.5em 0 1em !important;
+    @include print {
+      margin: 1em 0 1.5em !important;
+    }
   }
 }
 
 .nutanix-page--overview-for-upm h2 {
   #content_editor &,
-  .pdf-page-content {
+  .pdf-page-content & {
     color: $brand-two !important; 
   }
 }
@@ -59,6 +62,13 @@
   #content_editor &,
   .pdf-page-content & {
     color: $base-text-color;
+  }
+}
+
+.nutanix-page--overview-for-upm .nutanix-icon-item--content {
+  @include print {
+    max-width: 2in;
+    padding-left: 0.25in;
   }
 }
 

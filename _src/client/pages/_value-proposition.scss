@@ -129,21 +129,13 @@
   }
 
   .nutanix-page--value-proposition--chart-container {
-    display: flex;
     width: 100%;
-    @include print {
-      display: table;
-    }
 
     > * {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: inline-block;
+      float: left;
       text-align: center;
-      width: 50%;
-      @include print {
-        display: table-cell;
-      }
+      width: 44%;
     }
 
   }
@@ -153,10 +145,13 @@
     margin-left: 1em;
     margin-right: 1em;
     min-height: 300px;
+    padding-top: 135px;
+    
     #content_editor &,
     .pdf-page-content & {
       color: #fff;
     }
+
   }
 
   .nutanix-page--value-proposition--chart-element-nutanix {
@@ -164,6 +159,7 @@
     margin-top: 180px;
     height: 120px;
     position: relative;
+    padding-top: 55px;
 
     &:before {
       content: url(https://mytinder.s3.amazonaws.com/assets/medias/613033_original.jpg?1521516432);
@@ -172,7 +168,7 @@
       left: 0;
       right: 0;
       @include print {
-        left: 0.1in;
+        left: 0.075in;
       }
     }
 
@@ -183,8 +179,9 @@
   }
 
   .nutanix-page--value-proposition--virtualization .nutanix-page--value-proposition--chart-element-nutanix {
-    margin-top: calc(300px - 60px);
+    margin-top: 240px;
     height: 60px;
+    padding-top: 25px;
     &:before {
       content: url(https://mytinder.s3.amazonaws.com/assets/medias/612982_original.jpg?1521516410);
     }
